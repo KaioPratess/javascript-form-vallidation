@@ -7,18 +7,19 @@ body {
 
 .container {
   border: 1px solid black;
-  border-radius: 12px;
   width: 400px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 20px 30px 20px 25px;
 }
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
 
 .form label {
+  display: block;
   margin-bottom: 5px;
   font-size: 1.125rem;
 }
@@ -29,6 +30,8 @@ body {
   background-color: grey;
   color: white;
   padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .btn {
@@ -36,4 +39,16 @@ body {
   font-size: 1.125rem;
   padding: 5px;
   cursor: pointer;
+}
+
+.form input.error {
+  border: 2px solid red;
+}
+
+.form input.ok {
+  border: 2px solid green;
+}
+
+.error-message {
+  font-size: 0.875rem;
 }
