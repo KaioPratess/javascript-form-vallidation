@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 400px;
+  padding: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+}
+
+.form input {
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+}
+
+.btn {
+  grid-column: 1/-1;
+  font-size: 1.125rem;
+  padding: 5px;
+  cursor: pointer;
+}
